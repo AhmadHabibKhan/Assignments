@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Table</title>
+    <link rel="stylesheet" href="timetable.css">
+</head>
+<body>
+    <h1>Weekly Time Table</h1>
+    <br>
+    <br>
+
+    <table border="1" cellspacing="10" cellpadding="5" >
+
+        <thead>
+            <tr>
+                <th>Day/Time</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>8AM - 9AM</td>
+                <td></td>
+                <td class="bio">BI104</td>
+                <td></td>
+                <td class="eng">EN101</td>
+                <td class="pt" rowspan="2">PE101</td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>9AM - 10AM</td>
+                <td class="eng">EN101</td>
+                <td></td>
+                <td class="math">MA101</td>
+                <td></td>
+                <td class="comp">CO101</td>
+            </tr>
+
+            <tr>
+                <td>10AM - 11AM</td>
+                <td class="math" rowspan="2">MA101</td>
+                <td class="hindi">HI403</td>
+                <td></td>
+                <td class="bio">BI104</td>
+                <td></td>
+                <td class="bio" rowspan="2">BI104</td>
+            </tr> 
+            
+            <tr>
+                <td>11AM - 12 Noon</td>
+                <td></td>
+                <td class="eng" rowspan="2">EN101</td>
+                <td class="phy">PH302</td>
+                <td></td>
+            </tr>
+            
+            <tr>
+                <td>12 Noon - 1PM</td>
+                <td></td>
+                <td class="chem">CE307</td>
+                <td class="comp">CO101</td>
+                <td class="math">MA101</td>
+                <td></td>
+            </tr>
+            
+            <tr>
+                <td>1PM - 2PM</td>
+                <td class="chem">CE307</td>
+                <td></td>
+                <td class="comp">CO101</td>
+                <td></td>
+                <td class="chem">CE307</td>
+                <td></td>
+            </tr>
+            
+            <tr>
+                <td>2PM - 3PM</td>
+                <td class="hindi">HI403</td>
+                <td class="phy" rowspan="2">PH302</td>
+                <td></td>
+                <td class="hindi">HI403</td>
+                <td></td>
+                <td class="chem">CE307</td>
+            </tr>
+           
+            <tr>
+                <td>3PM - 4PM</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="phy">PH302</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <br>
+    <ul>
+        <li>English - EN101</li>
+        <li>Math - MA101</li>
+        <li>Physics - PH302</li>
+        <li>Chemistry - CE307</li>
+        <li>Biology - BI104</li>
+        <li>Computer Science - CO101</li>
+        <li>Hindi - HI403</li>
+        <li>Physical Education - PE101</li>
+    </ul>
+    <br>
+    <br>
+    <h1>Forms</h1>
+
+
+    <form method="GET"> 
+        <fieldset>
+            <legend>User Info</legend>
+            <div id="name">
+                <label for="fname">First Name:</label>
+                <input type="text" name="firstname" id="fname" required placeholder="First Name">
+                
+                <label for="mname">Middle Name:</label>
+                <input type="text" name="middlename" id="mname" placeholder="Middle Name">
+                <br>
+                <br>
+                
+                <label for="lname">Last Name:</label>
+                <input type="text" name="lastname" id="mname" required placeholder="Last Name">
+                <br>
+                <br>
+            </div>
+            
+            <div id="gender">
+                <label for="m">Male:</label>
+                <input type="radio" name="gender" id="m" required>
+                <label for="f">Female:</label>
+                <input type="radio" name="gender" id="f">
+                <label for="o">Others:</label>
+                <input type="radio" name="gender" id="o">
+                <br>
+                <br>
+            </div>
+
+            <div id="dateofbirth">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" name="dateofbirth" id="dob">
+                <br>
+                <br>
+            </div>
+
+            <div id="contactinfo">
+                <label for="email">Email Id:</label>
+                <input type="text" name="email" id="email" required placeholder="Enter your Email Id">
+                <br>
+                <br>
+
+                <label for="mno">Contact Number:</label>
+                <input type="tel" maxlength="10" name="mobilenumber" id="mno" required placeholder="Enter your 10 digit mobile number">
+                <br>
+                <br>
+
+                <label for="add1">Address Line 1:</label>
+                <input type="text" name="Address" id="add1" required placeholder="Enter your address">
+                <br>
+                <br>
+                <label for="add2">Address Line 2:</label>
+                <input type="text" name="Address" id="add2" placeholder="Enter your address">
+                <br>
+                <br>
+                <label for="pincd">Pincode:</label>
+                <input type="text" maxlength="6" name="pincode" id="pincd" required placeholder="Enter your 6 didgit Pincode">
+                <br>
+                <br>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Education</legend>
+            <label for="uniname">University:</label>
+            <input type="text" name="University" id="uniname" required placeholder="University">
+            <br>
+            <br>
+            
+            <label for="yos">Year of Study:</label>
+            <input type="number" max="4" name="yearofstudy" id="yos" required placeholder="Year of Study">
+            <br>
+            <br>
+
+            <label for="stream">Stream</label>
+            <select id="stream" required>
+                <option>Please choose and option</option>
+                <option>Computer Science</option>
+                <option>Software Engineering</option>
+                <option>Civil Engineering</option>
+                <option>Electrical Engineering</option>
+            </select>
+            <br>
+            <br>
+
+            <label for="ms">Marksheet:</label>
+            <input type="file" name="marksheet" id="ms" required>
+            <br>
+            <br>
+            <button>Submit</button>
+        </fieldset>
+        
+    </form>
+</body>
+</html>

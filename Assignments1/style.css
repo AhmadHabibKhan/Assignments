@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+    margin: 50px auto;
+}
+
+table{
+    text-align: center;
+    position: relative;
+    margin: auto;
+    border-collapse: collapse;
+    border: 5px inset black;
+    width: 70%;
+    background-color: #FAF5EF;
+}
+
+thead{
+    font-weight: bold;
+    height: 55px;
+    background-color: #EFF7FB;
+}
+
+td:first-of-type{
+    font-weight: bold;
+    background-color: #EFF7FB;
+}
+
+td{
+    height: 30px;
+}
+
+td:hover{
+    font-weight: bold;
+    color: Black;
+    background-color: #FAF5EF;
+}
+
+.eng{
+    font-weight: bold;
+    color: #f8edeb;
+    background-color: #f94144;
+}
+
+.math{
+    font-weight: bold;
+    color: #f8edeb;
+    background-color: #f3722c;
+}
+
+.phy{
+    font-weight: bold;
+    color: #f8edeb;
+    background-color: #F8961E;
+}
+
+.chem{
+    font-weight: bold;
+    color: #f8edeb;
+    background-color: #F9844A;
+}
+
+.bio{
+    font-weight: bold;
+    font-weight: bold;
+    color: #f8edeb;
+    background-color: #F9C74F;
+}
+
+.comp{
+    font-weight: bold;
+    color: #f8edeb;
+    background-color: #90BE6D;
+}
+
+.hindi{
+    font-weight: bold;
+    color: #f8edeb;
+    background-color: #43AA8B;
+}
+
+.pt{
+    font-weight: bold;
+    color: #f8edeb;
+    background-color: #4D908E;
+}
+
+ul{
+    list-style-position: inside;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
+li{
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+}
+
+fieldset{
+    width: 80vw;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+
+input[type=text], select, input[type=number], input[type=date], input[type=file]{
+    display: inline-block;
+    width: 20%;
+    padding: 5px;
+    margin-left: 5px;
+    margin-right: 20px;
+}
+button{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
