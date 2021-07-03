@@ -1,0 +1,136 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.container{
+    /* border: 1px solid #ccc; */
+    width: 95%;
+    overflow: hidden;
+    margin: 20px auto;
+    /* margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-rows: 200px;
+    gap: 20px; */
+}
+
+.container > div {
+    display: grid;
+    grid-auto-columns: 200px;
+    grid-auto-flow: column;
+    gap: 20px;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+  }
+
+
+nav{
+    background-color: palevioletred;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+}
+nav i{
+    margin-right:10px ;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.6rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width:650px){
+    nav, ul{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.item img{
+    transition: 250ms;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.item{
+    border-radius: 15px;
+    position: relative;
+}
+
+.item:hover img{
+    opacity: 0.45;
+}
+
+.item i{
+    font-size: 1.8rem;
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    transform: scale(0);
+    transition: 300ms;
+}
+
+.item:hover i{
+    transform: scale(2);
+}
+
+section:first-of-type{
+    display: flex;
+    position: relative;
+    width: 90vw;
+    height: 600px;
+    margin: 20px auto;
+    background-color: lightblue;
+    border-radius: 15px;
+}
+section:first-of-type img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+#slideset > * {
+    animation: 12s autoplay infinite linear;
+    position: absolute;  
+    opacity: 0.0;
+}
+
+#slideset > *:nth-child(1) {
+    animation-delay: 0s
+}
+
+#slideset > *:nth-child(2) {
+    animation-delay: 4s
+}
+
+#slideset > *:nth-child(3) {
+    animation-delay: 8s
+}
+
+
+@keyframes autoplay {
+    0% {opacity: 0.0}
+    4% {opacity: 1.0}
+    33.33% {opacity: 1.0}
+    37.33% {opacity: 0.0}
+    100% {opacity: 0.0}
+  }
