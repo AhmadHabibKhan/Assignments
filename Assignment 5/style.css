@@ -1,0 +1,42 @@
+.bg-custom-1{
+    background-color: #83c5be;
+}
+body{
+    background-color: #c2e9e595;
+}
+#aboutcard{
+    align-items: center;
+}
+.accordian{
+    background-color: #acd8d395;
+}
+.accordion-button{
+    background-color: #acd8d395!important;
+    color: #fff;
+    font-weight: bold;
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.25rem rgb(43 62 63 / 25%);
+
+}
+
+.accordion-button:not(.collapsed) {
+    color: #fff;
+}
+
+#insta{
+    text-decoration: none;
+
+}
+
+.list-group-item{
+    background-color: #acd8d395;
+    color: #fff;
+    
+}
+
+#ul1, #ul2{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
